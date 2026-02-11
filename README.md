@@ -8,9 +8,10 @@
 **FlashClip** allows you to keep the existing powerful features of FlowClip (which in turn is forked from Maccy) while leveraging two new **auto-highlight second item** and **copying/pasting with bare number keys** features. With FlashClip, you can easily perform batch operations.
 
 FlashClip is a fork of [FlowClip](https://gityeop.github.io/FlowClip/) which itself is a fork [Maccy](https://maccy.app), keeping it lightweight, fast, and open-source.
-<br clear="left"/>
 
 <img align="left" height="272" src="docs/app-screenshot.png" alt="FlashClip Icon">
+    
+<br clear="left"/>
 
 ## ✨ Key Features
 
