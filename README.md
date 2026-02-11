@@ -10,6 +10,8 @@
 FlashClip is a fork of [FlowClip](https://gityeop.github.io/FlowClip/) which itself is a fork [Maccy](https://maccy.app), keeping it lightweight, fast, and open-source.
 <br clear="left"/>
 
+<img align="left" height="272" src="docs/app-screenshot.png" alt="FlashClip Icon">
+
 ## ✨ Key Features
 
 ### 🚀 Queue Clipboard (New!)
