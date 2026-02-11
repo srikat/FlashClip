@@ -2,15 +2,15 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'FlowClip',
+  title: 'FlashClip',
   tagline: 'Clipboard, built for flow.',
   favicon: 'img/logo.png',
 
-  url: 'https://gityeop.github.io',
-  baseUrl: '/FlowClip/',
+  url: 'https://srikat.github.io',
+  baseUrl: '/FlashClip/',
 
-  organizationName: 'gityeop',
-  projectName: 'FlowClip',
+  organizationName: 'srikat',
+  projectName: 'FlashClip',
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
@@ -39,14 +39,14 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'FlowClip',
+        title: 'FlashClip',
         logo: {
-          alt: 'FlowClip Logo',
+          alt: 'FlashClip Logo',
           src: 'img/logo.png',
         },
         items: [
           {
-            href: 'https://github.com/gityeop/FlowClip',
+            href: 'https://github.com/srikat/FlashClip',
             label: 'GitHub',
             position: 'right',
           },
@@ -54,7 +54,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} Sang Yeop Lim. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Sridhar Katakam. Built with Docusaurus.`,
       },
     }),
 };

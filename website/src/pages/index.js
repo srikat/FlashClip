@@ -8,7 +8,7 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   const [showToast, setShowToast] = useState(false);
 
-  const brewCommand = 'brew tap gityeop/flowclip && brew install --cask flowclip';
+  const brewCommand = 'brew tap srikat/flashclip && brew install --cask flashclip';
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(brewCommand).then(() => {
@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="FlowClip: Clipboard, built for flow.">
+      description="FlashClip: Clipboard, built for flow.">
       <main>
         <div className={clsx('toast', showToast && 'toast--visible')}>
           ✓ Copied to clipboard!
@@ -31,13 +31,13 @@ export default function Home() {
             <div className="row" style={{alignItems: 'center', textAlign: 'left'}}>
               <div className="col col--6">
                 <div style={{display: 'flex', alignItems: 'center', gap: '2rem', marginBottom: '2.5rem'}}>
-                  <img 
-                    src="img/logo.png" 
-                    alt="FlowClip Logo" 
-                    style={{width: '120px', height: '120px'}} 
+                  <img
+                    src="img/logo.png"
+                    alt="FlashClip Logo"
+                    style={{width: '120px', height: '120px'}}
                   />
                   <h1 className="hero__title" style={{fontSize: '2.8rem', textAlign: 'left', margin: 0, lineHeight: '1.2'}}>
-                    <span style={{whiteSpace: 'nowrap'}}>FlowClip: Clipboard,</span><br />
+                    <span style={{whiteSpace: 'nowrap'}}>FlashClip: Clipboard,</span><br />
                     built for flow.
                   </h1>
                 </div>
@@ -48,10 +48,10 @@ export default function Home() {
                 <div className="hero__buttons" style={{display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'flex-start'}}>
                   <Link
                     className="button--bold"
-                    to="https://github.com/gityeop/FlowClip/releases/latest">
+                    to="https://github.com/srikat/FlashClip/releases/latest">
                     Download now
                   </Link>
-                  
+
                   <button className="button--brew" onClick={copyToClipboard} title="Click to copy">
                     <span style={{color: '#adb5bd'}}>$</span>
                     <code>{brewCommand}</code>
@@ -64,15 +64,15 @@ export default function Home() {
               </div>
               <div className="col col--6">
                  <div style={{
-                   background: '#fff', 
+                   background: '#fff',
                    padding: '1rem',
-                   borderRadius: '24px', 
+                   borderRadius: '24px',
                    boxShadow: '0 8px 0 rgba(0,0,0,1)',
                    border: '2px solid #000'
                  }}>
-                   <img 
-                     src="img/maccy_demo.gif" 
-                     alt="FlowClip Demo"
+                   <img
+                     src="img/maccy_demo.gif"
+                     alt="FlashClip Demo"
                      style={{borderRadius: '12px', width: '100%', display: 'block'}}
                    />
                  </div>
@@ -87,21 +87,21 @@ export default function Home() {
               <div className="col col--6">
                 <h2 style={{fontSize: '3rem', marginBottom: '2rem'}}>Queue Clipboard.</h2>
                 <p style={{fontSize: '1.25rem', color: 'var(--ifm-color-emphasis-700)', lineHeight: '1.6'}}>
-                  Build a queue of items simply by copying multiple times. 
-                  Paste them one by one or join them with custom separators. 
-                  FlowClip keeps your momentum alive.
+                  Build a queue of items simply by copying multiple times.
+                  Paste them one by one or join them with custom separators.
+                  FlashClip keeps your momentum alive.
                 </p>
               </div>
               <div className="col col--6">
                  <div style={{
-                   background: '#fff', 
+                   background: '#fff',
                    padding: '1rem',
-                   borderRadius: '24px', 
+                   borderRadius: '24px',
                    boxShadow: '0 8px 0 rgba(0,0,0,1)',
                    border: '2px solid #000'
                  }}>
-                   <img 
-                     src="img/product_demo.gif" 
+                   <img
+                     src="img/product_demo.gif"
                      alt="Queue Clipboard Demo"
                      style={{borderRadius: '12px', width: '100%', display: 'block'}}
                    />

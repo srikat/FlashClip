@@ -3,9 +3,9 @@ set -e
 
 # Configuration
 SCHEME="Maccy"
-PRODUCT_NAME="FlowClip"
-BUNDLE_ID="com.gityeop.FlowClip"
-NOTARY_PROFILE="FlowClip-Notary"
+PRODUCT_NAME="FlashClip"
+BUNDLE_ID="com.sridharkatakam.FlashClip"
+NOTARY_PROFILE="FlashClip-Notary"
 ARCHIVE_PATH="./build/${PRODUCT_NAME}.xcarchive"
 EXPORT_PATH="./build/Export"
 APP_PATH="${EXPORT_PATH}/${PRODUCT_NAME}.app"

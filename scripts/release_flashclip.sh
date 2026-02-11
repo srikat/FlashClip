@@ -4,15 +4,15 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 PLIST_PATH="$ROOT_DIR/Maccy/Info.plist"
 APPCAST_PATH="$ROOT_DIR/appcast.xml"
-ZIP_PATH="$ROOT_DIR/build/FlowClip.zip"
+ZIP_PATH="$ROOT_DIR/build/FlashClip.zip"
 NOTARIZE_SCRIPT="$ROOT_DIR/scripts/notarize.sh"
-TAP_REPO_URL="https://github.com/gityeop/homebrew-flowclip.git"
-TAP_CASK_PATH="Casks/flowclip.rb"
+TAP_REPO_URL="https://github.com/srikat/homebrew-flashclip.git"
+TAP_CASK_PATH="Casks/flashclip.rb"
 
 usage() {
   cat <<'EOF'
 Usage:
-  ./scripts/release_flowclip.sh \
+  ./scripts/release_flashclip.sh \
     --version 1.0.9 \
     --build 10 \
     --notes-file /path/to/release_notes.md \
@@ -24,13 +24,13 @@ Optional:
   --pub-date "<RFC2822>" Override appcast pubDate
 
 Environment variable equivalents:
-  FLOWCLIP_VERSION
-  FLOWCLIP_BUILD
-  FLOWCLIP_NOTES_FILE
-  FLOWCLIP_HTML_NOTES_FILE
-  FLOWCLIP_PUB_DATE
-  FLOWCLIP_SKIP_NOTARIZE=1
-  FLOWCLIP_SKIP_HOMEBREW=1
+  FLASHCLIP_VERSION
+  FLASHCLIP_BUILD
+  FLASHCLIP_NOTES_FILE
+  FLASHCLIP_HTML_NOTES_FILE
+  FLASHCLIP_PUB_DATE
+  FLASHCLIP_SKIP_NOTARIZE=1
+  FLASHCLIP_SKIP_HOMEBREW=1
 EOF
 }
 
@@ -52,13 +52,13 @@ prompt_if_empty() {
   fi
 }
 
-VERSION="${FLOWCLIP_VERSION:-}"
-BUILD="${FLOWCLIP_BUILD:-}"
-NOTES_FILE="${FLOWCLIP_NOTES_FILE:-}"
-HTML_NOTES_FILE="${FLOWCLIP_HTML_NOTES_FILE:-}"
-PUB_DATE="${FLOWCLIP_PUB_DATE:-$(date '+%a, %d %b %Y %H:%M:%S %z')}"
-SKIP_NOTARIZE="${FLOWCLIP_SKIP_NOTARIZE:-0}"
-SKIP_HOMEBREW="${FLOWCLIP_SKIP_HOMEBREW:-0}"
+VERSION="${FLASHCLIP_VERSION:-}"
+BUILD="${FLASHCLIP_BUILD:-}"
+NOTES_FILE="${FLASHCLIP_NOTES_FILE:-}"
+HTML_NOTES_FILE="${FLASHCLIP_HTML_NOTES_FILE:-}"
+PUB_DATE="${FLASHCLIP_PUB_DATE:-$(date '+%a, %d %b %Y %H:%M:%S %z')}"
+SKIP_NOTARIZE="${FLASHCLIP_SKIP_NOTARIZE:-0}"
+SKIP_HOMEBREW="${FLASHCLIP_SKIP_HOMEBREW:-0}"
 
 while [[ $# -gt 0 ]]; do
   case "$1" in
@@ -152,8 +152,8 @@ fi
 SHA256="$(shasum -a 256 "$ZIP_PATH" | awk '{print $1}')"
 SIZE_BYTES="$(stat -f%z "$ZIP_PATH")"
 TAG="v$VERSION"
-RELEASE_URL="https://github.com/gityeop/FlowClip/releases/download/$TAG/FlowClip.zip"
-RELEASE_PAGE="https://github.com/gityeop/FlowClip/releases/tag/$TAG"
+RELEASE_URL="https://github.com/srikat/FlashClip/releases/download/$TAG/FlashClip.zip"
+RELEASE_PAGE="https://github.com/srikat/FlashClip/releases/tag/$TAG"
 
 echo "==> Artifact metadata"
 echo "    SHA256: $SHA256"
@@ -239,7 +239,7 @@ if [[ "$SKIP_HOMEBREW" != "1" ]]; then
   if git -C "$TAP_DIR" diff --cached --quiet; then
     echo "    Homebrew tap already up to date"
   else
-    git -C "$TAP_DIR" commit -m "update: FlowClip $TAG"
+    git -C "$TAP_DIR" commit -m "update: FlashClip $TAG"
     git -C "$TAP_DIR" push origin main
   fi
 fi

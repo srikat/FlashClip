@@ -1448,7 +1448,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gityeop.FlashClipUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sridharkatakam.FlashClipUITests;
 				PRODUCT_NAME = FlashClip;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -1475,7 +1475,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gityeop.FlashClipUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sridharkatakam.FlashClipUITests;
 				PRODUCT_NAME = FlashClip;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -1499,7 +1499,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gityeop.FlashClipTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sridharkatakam.FlashClipTests;
 				PRODUCT_NAME = FlashClip;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -1523,7 +1523,7 @@
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gityeop.FlashClipTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sridharkatakam.FlashClipTests;
 				PRODUCT_NAME = FlashClip;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

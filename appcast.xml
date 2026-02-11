@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
-    <title>FlowClip</title>
-    <link>https://raw.githubusercontent.com/gityeop/FlowClip/master/appcast.xml</link>
+    <title>FlashClip</title>
+    <link>https://raw.githubusercontent.com/srikat/FlashClip/master/appcast.xml</link>
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
     <item>
@@ -31,10 +31,10 @@
         ]]>
       </description>
       <pubDate>Wed, 11 Feb 2026 03:28:49 +0900</pubDate>
-      <releaseNotesLink>https://github.com/gityeop/FlowClip/releases/tag/v1.0.9</releaseNotesLink>
+      <releaseNotesLink>https://github.com/srikat/FlashClip/releases/tag/v1.0.9</releaseNotesLink>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <enclosure
-        url="https://github.com/gityeop/FlowClip/releases/download/v1.0.9/FlowClip.zip"
+        url="https://github.com/srikat/FlashClip/releases/download/v1.0.9/FlashClip.zip"
         sparkle:version="10"
         sparkle:shortVersionString="1.0.9"
         length="6908309"
@@ -54,10 +54,10 @@
         ]]>
       </description>
       <pubDate>Fri, 06 Feb 2026 21:40:00 +0900</pubDate>
-      <releaseNotesLink>https://github.com/gityeop/FlowClip/releases/tag/v1.0.8</releaseNotesLink>
+      <releaseNotesLink>https://github.com/srikat/FlashClip/releases/tag/v1.0.8</releaseNotesLink>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <enclosure
-        url="https://github.com/gityeop/FlowClip/releases/download/v1.0.8/FlowClip.zip"
+        url="https://github.com/srikat/FlashClip/releases/download/v1.0.8/FlashClip.zip"
         sparkle:version="9"
         sparkle:shortVersionString="1.0.8"
         length="6895116"
@@ -76,17 +76,17 @@
             </li>
             <li><strong>Improvements:</strong>
               <ul>
-                <li><strong>Focus Handling:</strong> When using Cmd+C or Cmd+V within the Queue Clipboard, FlowClip now temporarily yields focus to the background app to ensure the action is performed on the correct target.</li>
+                <li><strong>Focus Handling:</strong> When using Cmd+C or Cmd+V within the Queue Clipboard, FlashClip now temporarily yields focus to the background app to ensure the action is performed on the correct target.</li>
               </ul>
             </li>
           </ul>
         ]]>
       </description>
       <pubDate>Mon, 02 Feb 2026 03:57:00 +0900</pubDate>
-      <releaseNotesLink>https://github.com/gityeop/FlowClip/releases/tag/v1.0.7</releaseNotesLink>
+      <releaseNotesLink>https://github.com/srikat/FlashClip/releases/tag/v1.0.7</releaseNotesLink>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <enclosure
-        url="https://github.com/gityeop/FlowClip/releases/download/v1.0.7/FlowClip.zip"
+        url="https://github.com/srikat/FlashClip/releases/download/v1.0.7/FlashClip.zip"
         sparkle:version="8"
         sparkle:shortVersionString="1.0.7"
         length="6892907"
@@ -113,10 +113,10 @@
         ]]>
       </description>
       <pubDate>Sun, 01 Feb 2026 17:15:00 +0900</pubDate>
-      <releaseNotesLink>https://github.com/gityeop/FlowClip/releases/tag/v1.0.6</releaseNotesLink>
+      <releaseNotesLink>https://github.com/srikat/FlashClip/releases/tag/v1.0.6</releaseNotesLink>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <enclosure
-        url="https://github.com/gityeop/FlowClip/releases/download/v1.0.6/FlowClip.zip"
+        url="https://github.com/srikat/FlashClip/releases/download/v1.0.6/FlashClip.zip"
         sparkle:version="7"
         sparkle:shortVersionString="1.0.6"
         length="6878326"
@@ -132,10 +132,10 @@
         ]]>
       </description>
       <pubDate>Thu, 22 Jan 2026 22:50:00 +0900</pubDate>
-      <releaseNotesLink>https://github.com/gityeop/FlowClip/releases/tag/v1.0.5</releaseNotesLink>
+      <releaseNotesLink>https://github.com/srikat/FlashClip/releases/tag/v1.0.5</releaseNotesLink>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
       <enclosure
-        url="https://github.com/gityeop/FlowClip/releases/download/v1.0.5/FlowClip_1.0.5.zip"
+        url="https://github.com/srikat/FlashClip/releases/download/v1.0.5/FlashClip_1.0.5.zip"
         sparkle:version="6"
         sparkle:shortVersionString="1.0.5"
         length="8388608"
