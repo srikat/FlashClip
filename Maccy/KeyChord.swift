@@ -32,6 +32,7 @@ enum KeyChord: CaseIterable {
   case pinOrUnpin
   case selectCurrentItem
   case close
+  case selectAndPasteShortcutItem
   case unknown
 
   init(_ event: NSEvent?) {
@@ -104,6 +105,9 @@ enum KeyChord: CaseIterable {
       self = .close
     case (_, _) where !modifierFlags.isDisjoint(with: [.command, .control, .option]):
       self = .ignored
+    case (.one, []), (.two, []), (.three, []), (.four, []),
+         (.five, []), (.six, []), (.seven, []), (.eight, []), (.nine, []):
+      self = .selectAndPasteShortcutItem
     default:
       self = .unknown
     }

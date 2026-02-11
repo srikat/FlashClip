@@ -30,7 +30,12 @@ class History { // swiftlint:disable:this type_body_length
         updateItems(search.search(string: searchQuery, within: all))
 
         if searchQuery.isEmpty {
-          AppState.shared.selection = unpinnedItems.first?.id
+          let unpinned = unpinnedItems
+          if unpinned.count >= 2 {
+            AppState.shared.selection = unpinned[1].id
+          } else {
+            AppState.shared.selection = unpinned.first?.id
+          }
         } else {
           AppState.shared.highlightFirst()
         }
@@ -53,6 +58,12 @@ class History { // swiftlint:disable:this type_body_length
       return nil
     }
 
+    let key = Sauce.shared.key(for: Int(event.keyCode))
+    return items.first { $0.shortcuts.contains(where: { $0.key == key }) }
+  }
+
+  var pressedBareShortcutItem: HistoryItemDecorator? {
+    guard let event = NSApp.currentEvent else { return nil }
     let key = Sauce.shared.key(for: Int(event.keyCode))
     return items.first { $0.shortcuts.contains(where: { $0.key == key }) }
   }
@@ -328,6 +339,19 @@ class History { // swiftlint:disable:this type_body_length
         return
       }
     }
+
+    Task {
+      searchQuery = ""
+    }
+  }
+
+  @MainActor
+  func selectAndPaste(_ item: HistoryItemDecorator?) {
+    guard let item else { return }
+
+    AppState.shared.popup.close()
+    Clipboard.shared.copy(item.item, removeFormatting: Defaults[.removeFormattingByDefault])
+    Clipboard.shared.paste()
 
     Task {
       searchQuery = ""

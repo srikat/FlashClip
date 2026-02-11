@@ -115,6 +115,17 @@ struct KeyHandlingView<Content: View>: View {
         case .close:
           appState.popup.close()
           return .handled
+        case .selectAndPasteShortcutItem:
+          if searchQuery.isEmpty, let item = appState.history.pressedBareShortcutItem {
+            appState.selection = item.id
+            Task {
+              try? await Task.sleep(for: .milliseconds(50))
+              appState.history.selectAndPaste(item)
+            }
+            return .handled
+          } else {
+            return .ignored
+          }
         default:
           ()
         }

@@ -5,8 +5,9 @@ import Sauce
 struct KeyShortcut: Identifiable {
   static func create(character: String) -> [KeyShortcut] {
     let key = Key(character: character, virtualKeyCode: nil)
+    let isNumber = character.count == 1 && character.first?.isNumber == true
     return [
-      KeyShortcut(key: key),
+      KeyShortcut(key: key, modifierFlags: isNumber ? [] : [.command]),
       KeyShortcut(key: key, modifierFlags: [.option]),
       KeyShortcut(key: key, modifierFlags: [Defaults[.pasteByDefault] ? .command : .option, .shift])
     ]
@@ -30,6 +31,16 @@ struct KeyShortcut: Identifiable {
 
   func isVisible(_ all: [KeyShortcut], _ pressedModifierFlags: NSEvent.ModifierFlags) -> Bool {
     if all.count == 1 {
+      return true
+    }
+
+    // Show the default shortcut (⌘ for pins, bare for numbers) when no modifiers are pressed
+    if modifierFlags.isEmpty, pressedModifierFlags.isEmpty {
+      return true
+    }
+
+    if modifierFlags.isEmpty, !pressedModifierFlags.isEmpty,
+       !all.contains(where: { $0.id != id && $0.modifierFlags == pressedModifierFlags }) {
       return true
     }
 

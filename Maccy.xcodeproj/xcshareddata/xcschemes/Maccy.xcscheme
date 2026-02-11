@@ -16,7 +16,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DAEE38421E3DBEB100DD2966"
-               BuildableName = "Maccy.app"
+               BuildableName = "FlashClip.app"
                BlueprintName = "Maccy"
                ReferencedContainer = "container:Maccy.xcodeproj">
             </BuildableReference>
@@ -40,7 +40,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DA360DAF1E3DF137005C6F6B"
-               BuildableName = "MaccyTests.xctest"
+               BuildableName = "FlashClip.xctest"
                BlueprintName = "MaccyTests"
                ReferencedContainer = "container:Maccy.xcodeproj">
             </BuildableReference>
@@ -50,7 +50,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DA0EE7B5204657830025FC60"
-               BuildableName = "MaccyUITests.xctest"
+               BuildableName = "FlashClip.xctest"
                BlueprintName = "MaccyUITests"
                ReferencedContainer = "container:Maccy.xcodeproj">
             </BuildableReference>
@@ -58,7 +58,7 @@
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -72,7 +72,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DAEE38421E3DBEB100DD2966"
-            BuildableName = "Maccy.app"
+            BuildableName = "FlashClip.app"
             BlueprintName = "Maccy"
             ReferencedContainer = "container:Maccy.xcodeproj">
          </BuildableReference>
@@ -89,7 +89,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DAEE38421E3DBEB100DD2966"
-            BuildableName = "Maccy.app"
+            BuildableName = "FlashClip.app"
             BlueprintName = "Maccy"
             ReferencedContainer = "container:Maccy.xcodeproj">
          </BuildableReference>
